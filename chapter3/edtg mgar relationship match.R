@@ -228,12 +228,12 @@ reldf$index_id <- seq.int(nrow(reldf))
 
 
 
-filename <- paste0("/Users/Kayla/Library/CloudStorage/OneDrive-ThePennsylvaniaStateUniversity/dissertation/DISS CH 2/DATA/reldf_edtgmgarmerge_MGARONLY_", format(Sys.time(), "%m%d%Y-%H%M"), ".csv")
+filename <- paste0("/DATA/reldf_edtgmgarmerge_MGARONLY_", format(Sys.time(), "%m%d%Y-%H%M"), ".csv")
 #write.csv(reldf, filename)
 
 colnames(reldf)
 reldf_small <- select(reldf, c(gid1:gname2, group1_id:year, reltype, ally_new:index_id))
-filename <- paste0("/Users/Kayla/Library/CloudStorage/OneDrive-ThePennsylvaniaStateUniversity/dissertation/DISS CH 2/DATA/reldf_edtgmgarmerge_MGARONLY_RELONLY_", format(Sys.time(), "%m%d%Y%-%H%M"), ".csv")
+filename <- paste0("/DATA/reldf_edtgmgarmerge_MGARONLY_RELONLY_", format(Sys.time(), "%m%d%Y%-%H%M"), ".csv")
 #write.csv(reldf_small, filename)
 
 
